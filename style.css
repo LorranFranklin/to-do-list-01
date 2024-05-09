@@ -2,16 +2,75 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(./imgs/background.png);
 }
 
 .container {
   background-color: #d1d1d1;
-  width: 390px;
+  width: 500px;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 auto;
+  margin: 100px auto 0;
+}
+
+.input-task {
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+#add-btn {
+  padding: 0 1rem;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  background-color: #117b66;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-weight: 500;
+}
+
+#add-btn:hover {
+  opacity: 0.8;
+}
+
+#add-btn:active {
+  opacity: .6;
+}
+
+.list-tasks {
+  margin-top: 30px;
+  width: 100%;
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 img {
   height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
 }
